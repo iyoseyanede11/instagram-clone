@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app{
+  background-color: #fafafa;
   min-height: 100vh;
+}
+.app_header{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #fff !important;
+  object-fit: contain;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.app__signup{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.app__posts{
+  padding: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app__postsLeft{
+  margin-right: 20px !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: Proxima-bold;
+  src: url(./proxima/FontsFree-Net-Proxima-Nova-Sbold.otf) format("opentype");
+}
+@font-face {
+  font-family: Proxima-reg;
+  src: url(./proxima/FontsFree-Net-proxima_nova_reg-webfont.ttf) format("opentype");
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: Proxima-reg;
 }
